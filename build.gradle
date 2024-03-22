@@ -26,7 +26,7 @@ repositories {
 
 ext.webjarsFontawesomeVersion = "4.7.0"
 ext.webjarsBootstrapVersion = "5.3.2"
-ext.tomcat-embed-el = '9.0.74'
+ext['tomcat.version'] = '9.0.45'
 
 dependencies {
   implementation 'org.springframework.boot:spring-boot-starter-cache'
@@ -36,7 +36,6 @@ dependencies {
   implementation 'org.springframework.boot:spring-boot-starter-validation'
   implementation 'javax.cache:cache-api'
   implementation 'jakarta.xml.bind:jakarta.xml.bind-api'
-  implementation 'org.apache.tomcat.embed:tomcat-embed-el'
   runtimeOnly 'org.springframework.boot:spring-boot-starter-actuator'
   runtimeOnly "org.webjars.npm:bootstrap:${webjarsBootstrapVersion}"
   runtimeOnly "org.webjars.npm:font-awesome:${webjarsFontawesomeVersion}"
